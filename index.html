@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Criptography</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+        <script src="./main.js" defer></script>
+        <script src="./Encrypt.js" defer></script>
+        <script src="./Decrypt.js" defer></script>
+        <script src="./Storage.js" defer></script>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+
+        <main>
+
+            <div class="container">
+                <div class="main-section">
+                    <h2>Cryptography App</h2>
+                    <div>
+                        <button id="encrypt-btn">Encrypt</button>
+                        <button id="decrypt-btn">Decrypt</button>
+                    </div>
+                    
+                </div>
+
+
+                <form class="encrypt-section">
+
+                    <div>   
+                        <fieldset>
+                            <label for="original-text">Original Text</label>
+                            <textarea id="original-text" cols="30" rows="10" required></textarea>
+                        </fieldset>
+    
+                        <fieldset>
+                            <label for="private-key">Private Key</label>
+                            <textarea id="private-key" cols="30" rows="10" required></textarea>
+                        </fieldset>
+                    </div>
+
+
+                    <button type="submit" id="encrypt_text-btn">Encrypt</button>
+                </form>
+
+                <div class="encrypt_result-section">
+                    <h2>Your encrypted text</h2>
+                    <div>
+                        <span id="encrypt_result-text"></span>
+                        <button class="clipboard-btn"><i class="bi bi-clipboard"></i></button>
+                    </div>
+
+                    <button class="go-home">Go Home</button>
+                </div>
+
+                <div class="decrypt-section">
+                    <h2>Select text to decrypt</h2>
+
+                    <div class="encrypt-text-list">
+                        
+                    </div>
+
+                </div>
+
+                <form class="decrypt_text-section">
+                    <h2 id="encrypted_text-selected"></h2>
+
+                    <fieldset>
+                        <textarea placeholder="Digit your private key" id="decrypt-key" cols="55" rows="10" required></textarea>
+                    </fieldset>
+
+                    <button id="decrypt_text-btn" type="submit">Decrypt</button>
+                </form>
+
+                <div class="decrypt_result-section">
+                    <h2>Your decrypted text</h2>
+                    <div>
+                        <span id="decrypt_text-result"></span>
+                        <button class="clipboard-btn"><i class="bi bi-clipboard"></i></button>
+                    </div>
+
+                    <button class="go-home">Go Home</button>
+                </div>
+            </div>
+
+
+
+        </main>
+
+        
+        
+    </body>
+</html>
