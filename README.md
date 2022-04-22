@@ -10,7 +10,7 @@
 - [x] Decrypt text
 
 
-### 🛠 Tecnologias
+### 🛠 Technologies
 
 - Javascript
 - Jquery
