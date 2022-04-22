@@ -12,9 +12,9 @@
 
 ### 🛠 Tecnologias
 
-- [Javascript]
-- [Jquery]
-- [Firebase]
+- Javascript
+- Jquery
+- Firebase
 
 <img src="./animation.gif">
 
